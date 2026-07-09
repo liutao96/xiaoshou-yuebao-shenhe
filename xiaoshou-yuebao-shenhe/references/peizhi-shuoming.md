@@ -79,20 +79,20 @@
 部长电脑更新示例：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Update-XiaoshouYuebaoSkill.ps1" -GithubRepo "<owner>/<repo>"
+powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Update-XiaoshouYuebaoSkill.ps1" -GithubRepo "liutao96/xiaoshou-yuebao-shenhe"
 ```
 
 如果已经拿到了固定清单地址，也可以用：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Update-XiaoshouYuebaoSkill.ps1" -ManifestUrl "https://api.github.com/repos/<owner>/<repo>/contents/release/latest-version.json?ref=main"
+powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Update-XiaoshouYuebaoSkill.ps1" -ManifestUrl "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main"
 ```
 
 如果仓库是私有仓库，部长电脑需要先配置只读 GitHub Token，不要把 Token 发在聊天里，也不要写进 Skill 包：
 
 ```powershell
 $env:GITHUB_TOKEN="你的只读 GitHub Token"
-powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Update-XiaoshouYuebaoSkill.ps1" -GithubRepo "<owner>/<repo>"
+powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Update-XiaoshouYuebaoSkill.ps1" -GithubRepo "liutao96/xiaoshou-yuebao-shenhe"
 ```
 
 更新脚本会执行：读取远端版本清单、比较本机版本、下载 zip、校验 SHA256、备份旧版到 `$HOME\.codex\skill-backups`、解压覆盖、写日志到 `$HOME\.codex\logs`。更新完成后需要重启 Codex / Claude Code 才能加载新 Skill。
@@ -100,7 +100,7 @@ powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-sh
 刘涛本机发布新版示例：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Build-XiaoshouYuebaoSkillRelease.ps1" -ZipUrl "https://github.com/<owner>/<repo>/releases/download/v1.3.1/xiaoshou-yuebao-shenhe.zip" -ManifestUrl "https://api.github.com/repos/<owner>/<repo>/contents/release/latest-version.json?ref=main" -GithubRepo "<owner>/<repo>"
+powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Build-XiaoshouYuebaoSkillRelease.ps1" -ZipUrl "https://raw.githubusercontent.com/liutao96/xiaoshou-yuebao-shenhe/main/release/xiaoshou-yuebao-shenhe.zip" -ManifestUrl "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main" -GithubRepo "liutao96/xiaoshou-yuebao-shenhe"
 ```
 
 正式建议用 GitHub Releases 发布 `xiaoshou-yuebao-shenhe.zip`，同时把 `release/latest-version.json` 放在仓库里。版本检查优先走 GitHub Contents API，避免 raw 文件缓存导致旧版本误判。

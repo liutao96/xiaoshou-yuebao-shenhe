@@ -14,15 +14,15 @@
 部长或同事电脑已安装本 Skill 后，可检查更新：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Update-XiaoshouYuebaoSkill.ps1" -GithubRepo "<owner>/<repo>" -CheckOnly
+powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Update-XiaoshouYuebaoSkill.ps1" -GithubRepo "liutao96/xiaoshou-yuebao-shenhe" -CheckOnly
 ```
 
 确认更新：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Update-XiaoshouYuebaoSkill.ps1" -GithubRepo "<owner>/<repo>"
+powershell -ExecutionPolicy Bypass -File "$HOME\.codex\skills\xiaoshou-yuebao-shenhe\scripts\Update-XiaoshouYuebaoSkill.ps1" -GithubRepo "liutao96/xiaoshou-yuebao-shenhe"
 ```
 
 ## 注意
 
-这个仓库建议保持私有。不要提交真实月报、客户数据、密钥、Token、Cookie 或数据库连接信息。
+这个仓库当前是公开仓库。不要提交真实月报、客户数据、密钥、Token、Cookie 或数据库连接信息。

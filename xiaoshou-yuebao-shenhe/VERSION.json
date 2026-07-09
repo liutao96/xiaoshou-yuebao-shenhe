@@ -1,7 +1,7 @@
 {
   "name": "xiaoshou-yuebao-shenhe",
-  "version": "1.3.4",
-  "released_at": "2026-07-09T23:25:00+08:00",
+  "version": "1.3.5",
+  "released_at": "2026-07-09T23:35:00+08:00",
   "release_package": "xiaoshou-yuebao-shenhe.zip",
   "update": {
     "manifest_url": "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main",
@@ -10,8 +10,8 @@
     "updater": "scripts/Update-XiaoshouYuebaoSkill.ps1"
   },
   "release_notes": [
-    "接入公开 GitHub 更新源：liutao96/xiaoshou-yuebao-shenhe。",
-    "更新脚本可通过 GitHub Contents API 检查远端 latest-version.json。",
-    "发布包改为直接随仓库 release/xiaoshou-yuebao-shenhe.zip 分发，方便 Codex 直接安装和更新。"
+    "修复 PowerShell 5.1 读取 GitHub Contents API 清单时遇到 UTF-8 BOM 导致 JSON 解析失败的问题。",
+    "保留公开 GitHub 更新源：liutao96/xiaoshou-yuebao-shenhe。",
+    "部长电脑可继续通过 -GithubRepo 一键检查和更新。"
   ]
 }

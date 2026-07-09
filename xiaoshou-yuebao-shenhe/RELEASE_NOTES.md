@@ -1,5 +1,11 @@
 # 销售月报审核 Skill 发布说明
 
+## 1.3.5 - 2026-07-09
+
+- 修复 PowerShell 5.1 读取 GitHub Contents API 清单时遇到 UTF-8 BOM 导致 JSON 解析失败的问题。
+- 保留公开 GitHub 更新源：`liutao96/xiaoshou-yuebao-shenhe`。
+- 部长电脑可继续通过 `-GithubRepo` 一键检查和更新。
+
 ## 1.3.4 - 2026-07-09
 
 - 接入公开 GitHub 更新源：`liutao96/xiaoshou-yuebao-shenhe`。

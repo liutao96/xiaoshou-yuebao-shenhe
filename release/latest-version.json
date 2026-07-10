@@ -1,20 +1,20 @@
 ﻿{
     "name":  "xiaoshou-yuebao-shenhe",
-    "version":  "1.4.5",
-    "released_at":  "2026-07-10T13:54:31+08:00",
+    "version":  "1.4.6",
+    "released_at":  "2026-07-10T14:12:09+08:00",
     "release_package":  "xiaoshou-yuebao-shenhe.zip",
     "package_path":  "xiaoshou-yuebao-shenhe.zip",
     "zip_url":  "https://raw.githubusercontent.com/liutao96/xiaoshou-yuebao-shenhe/main/release/xiaoshou-yuebao-shenhe.zip",
     "manifest_url":  "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main",
     "github_repo":  "liutao96/xiaoshou-yuebao-shenhe",
     "github_branch":  "main",
-    "sha256":  "3e08d14bd911318b59a0c2ec221caaf70ea297f816f00b695c10107373f81dec",
+    "sha256":  "03ff9fd2f90f26582c3d2414fd44df07d12ac1fab9060901898f10eeab60fe50",
     "updater":  "scripts/Update-XiaoshouYuebaoSkill.ps1",
     "release_notes":  [
-                          "补充部长实际使用方式：只贴月报链接、复审链接和自然语言纠错即可，不需要填写反馈表。",
-                          "规则补丁读取改为优先使用结构化筛选，避免空关键词搜索在不同 lark-cli 环境下不稳定。",
-                          "新增写入前去重规则，避免多次部长纠错沉淀出重复补丁。",
-                          "收紧自动写入边界：纯措辞、格式、语气调整不写入规则补丁库。",
-                          "收紧已生效门槛：必须明确适用小组、适用场景、排除条件和评分影响，否则先写待确认。"
+                          "调整 A/B/C/D 交付形态：默认一个完整主报告，避免部长打开多个文件。",
+                          "A 类额外单独生成老板一页纸正式版，便于直接给老板或会议使用。",
+                          "B/C/D 的补充清单、主管整改版、重做通知默认合并到主报告前部，作为“部长重点看”章节。",
+                          "聊天区必须明确告诉部长重点看主报告哪一节，不能只给报告路径。",
+                          "同步总控、SOP、Word 交付、输出模板等规则，避免旧口径要求 C/D 默认拆独立文件。"
                       ]
 }

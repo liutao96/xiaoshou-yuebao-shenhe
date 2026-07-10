@@ -17,7 +17,7 @@
 - 口径、评分和最高分限制：参考 `pingfen-guize.md`。
 - 输出格式：参考 `shuchu-muban.md`、`jiaofu-xingtai.md`。
 - 整改后复审、重做后复核：参考 `fushen-jianhua-rukou.md`、`fushen-zhenggai.md`。
-- 部门填报模板：仅按需参考 `xiaoshou-yuebao-muban-v1.4.docx` 和 `xiaoshou-yuebao-gongjubao-v1.4.xlsx`；不能把模板中的条件页当成默认必填项。
+- 填报模板和补充工具包：不属于本 Skill 分发内容，也不是审核前置材料；只审核用户实际提交的月报原文和关键表格。
 如果知识文件与本说明冲突，以本说明为最高规则。
 
 ## 3. 统一口径

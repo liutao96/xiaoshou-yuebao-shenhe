@@ -1,18 +1,18 @@
 {
   "name": "xiaoshou-yuebao-shenhe",
-  "version": "1.4.0",
-  "released_at": "07/10/2026 10:13:15",
+  "version": "1.4.1",
+  "released_at": "07/10/2026 10:22:52",
   "release_package": "xiaoshou-yuebao-shenhe.zip",
   "package_path": "xiaoshou-yuebao-shenhe.zip",
   "zip_url": "https://raw.githubusercontent.com/liutao96/xiaoshou-yuebao-shenhe/main/release/xiaoshou-yuebao-shenhe.zip",
   "manifest_url": "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main",
   "github_repo": "liutao96/xiaoshou-yuebao-shenhe",
   "github_branch": "main",
-  "sha256": "bd069ecd587738e93c6e1b3e55ad123bf2434855eff798a0911d98de777488d3",
+  "sha256": "37318fc35f11638614ba026fb6452d17d21318f8dd6f2181a851a7bf7435951e",
   "updater": "scripts/Update-XiaoshouYuebaoSkill.ps1",
   "release_notes": [
-    "统一规则、复审入口、部长整改话术和模板资产，清除 V1.1 的默认补表要求。",
-    "Word 和 Excel 模板改为 1.4 简版：默认只改原月报，口径说明和费用复核均为条件页。",
+    "审核包改为纯审核交付：移除月报填报 Word 模板和条件化补充工具包，不再把它们作为使用资产。",
+    "删除两个资产不影响评分、14 模块、初审、复审和 Word/Markdown 审核报告输出。",
     "复审只要求整改后月报和可检索到的上次初审；整改回复、老板答复和补充表不再是默认前置材料。",
     "公司飞书文档默认仅使用 company-liutao-default，不自动使用个人或外包 profile。"
   ]

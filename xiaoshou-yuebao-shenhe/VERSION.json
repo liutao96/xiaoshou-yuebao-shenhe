@@ -1,7 +1,7 @@
 {
   "name": "xiaoshou-yuebao-shenhe",
-  "version": "1.4.2",
-  "released_at": "2026-07-10T10:30:14+08:00",
+  "version": "1.4.4",
+  "released_at": "2026-07-10T13:35:00+08:00",
   "release_package": "xiaoshou-yuebao-shenhe.zip",
   "update": {
     "manifest_url": "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main",
@@ -10,9 +10,9 @@
     "updater": "scripts/Update-XiaoshouYuebaoSkill.ps1"
   },
   "release_notes": [
-    "增加正式月报内填写说明、AI审核点和格式合规提醒的非错误分类，保留提醒且不计分、不打回。",
-    "强化部长首屏输出契约：正式初审必须逐项列出 1-14 模块，不能压缩成一段话或只给简单结论。",
-    "复审只要求整改后月报和可检索到的上次初审；整改回复、老板答复和补充表不再是默认前置材料。",
-    "公司飞书文档默认仅使用 company-liutao-default，不自动使用个人或外包 profile。"
+    "明确部长已具备规则补丁库编辑权限后，纠错沉淀不再每次二次确认。",
+    "新增自动写入判定表：可复用规则自动写入，不确定范围写待确认，清晰长期规则写已生效。",
+    "仅在删除、公开权限、跨 profile 或覆盖已有规则等高风险场景暂停确认。",
+    "写入后聊天区必须说明已修正当前报告，并沉淀了规则补丁及其状态。"
   ]
 }

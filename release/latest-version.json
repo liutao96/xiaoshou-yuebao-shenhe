@@ -1,19 +1,20 @@
 ﻿{
     "name":  "xiaoshou-yuebao-shenhe",
-    "version":  "1.4.4",
-    "released_at":  "2026-07-10T13:35:00+08:00",
+    "version":  "1.4.5",
+    "released_at":  "2026-07-10T13:54:31+08:00",
     "release_package":  "xiaoshou-yuebao-shenhe.zip",
     "package_path":  "xiaoshou-yuebao-shenhe.zip",
     "zip_url":  "https://raw.githubusercontent.com/liutao96/xiaoshou-yuebao-shenhe/main/release/xiaoshou-yuebao-shenhe.zip",
     "manifest_url":  "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main",
     "github_repo":  "liutao96/xiaoshou-yuebao-shenhe",
     "github_branch":  "main",
-    "sha256":  "f1e7f72809e03c4d55c12a7f8ca195ebebaa64df6faf442d8c23e3fc4c4618b1",
+    "sha256":  "3e08d14bd911318b59a0c2ec221caaf70ea297f816f00b695c10107373f81dec",
     "updater":  "scripts/Update-XiaoshouYuebaoSkill.ps1",
     "release_notes":  [
-                          "明确部长已具备规则补丁库编辑权限后，纠错沉淀不再每次二次确认。",
-                          "新增自动写入判定表：可复用规则自动写入，不确定范围写待确认，清晰长期规则写已生效。",
-                          "仅在删除、公开权限、跨 profile 或覆盖已有规则等高风险场景暂停确认。",
-                          "写入后聊天区必须说明已修正当前报告，并沉淀了规则补丁及其状态。"
+                          "补充部长实际使用方式：只贴月报链接、复审链接和自然语言纠错即可，不需要填写反馈表。",
+                          "规则补丁读取改为优先使用结构化筛选，避免空关键词搜索在不同 lark-cli 环境下不稳定。",
+                          "新增写入前去重规则，避免多次部长纠错沉淀出重复补丁。",
+                          "收紧自动写入边界：纯措辞、格式、语气调整不写入规则补丁库。",
+                          "收紧已生效门槛：必须明确适用小组、适用场景、排除条件和评分影响，否则先写待确认。"
                       ]
 }

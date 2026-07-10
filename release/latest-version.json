@@ -1,18 +1,18 @@
 {
   "name": "xiaoshou-yuebao-shenhe",
-  "version": "1.4.1",
-  "released_at": "07/10/2026 10:22:52",
+  "version": "1.4.2",
+  "released_at": "07/10/2026 10:30:14",
   "release_package": "xiaoshou-yuebao-shenhe.zip",
   "package_path": "xiaoshou-yuebao-shenhe.zip",
   "zip_url": "https://raw.githubusercontent.com/liutao96/xiaoshou-yuebao-shenhe/main/release/xiaoshou-yuebao-shenhe.zip",
   "manifest_url": "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main",
   "github_repo": "liutao96/xiaoshou-yuebao-shenhe",
   "github_branch": "main",
-  "sha256": "37318fc35f11638614ba026fb6452d17d21318f8dd6f2181a851a7bf7435951e",
+  "sha256": "6b6407c0b7f0f64e35fd0bf8b5de0c449524d65ccdf9dde3fbec4126e032ce11",
   "updater": "scripts/Update-XiaoshouYuebaoSkill.ps1",
   "release_notes": [
-    "审核包改为纯审核交付：移除月报填报 Word 模板和条件化补充工具包，不再把它们作为使用资产。",
-    "删除两个资产不影响评分、14 模块、初审、复审和 Word/Markdown 审核报告输出。",
+    "增加正式月报内填写说明、AI审核点和格式合规提醒的非错误分类，保留提醒且不计分、不打回。",
+    "强化部长首屏输出契约：正式初审必须逐项列出 1-14 模块，不能压缩成一段话或只给简单结论。",
     "复审只要求整改后月报和可检索到的上次初审；整改回复、老板答复和补充表不再是默认前置材料。",
     "公司飞书文档默认仅使用 company-liutao-default，不自动使用个人或外包 profile。"
   ]

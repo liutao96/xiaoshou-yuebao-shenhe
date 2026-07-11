@@ -46,6 +46,16 @@ Word：
 outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报AI初审报告.docx
 ```
 
+文件名必须使用中文业务名，部门或小组放在月份前面，例如：
+
+```text
+抖音商城组_2026-06_销售月报AI初审报告.docx
+抖音商城组_2026-06_销售月报AI初审报告.md
+天猫组_2026-06_老板一页纸正式版.docx
+```
+
+不得把英文 slug 当作正式交付文件名，例如 `2026-06_douyin_mall_sales_monthly_audit_report.docx`、`douyin_mall_sales_monthly_audit_report.md`、`tmall_boss_page.docx`。这类名称只能作为临时中间文件；发给部长、主管或老板前必须重命名为中文业务名。
+
 如果是复审：
 
 ```text
@@ -87,6 +97,29 @@ B/C/D 必须说明主报告重点区位置，例如：
 2. 交付 Markdown 底稿；
 3. 在聊天区明确说明“Word 正式版生成失败/当前环境缺少文档处理能力”；
 4. 说明下一步：可在有 Word 生成能力的 Codex 环境中用 Markdown 底稿转换，或安装/启用文档处理能力后重试。
+
+## Word 表格转换和验收
+
+正式 Word 不能只是把 Markdown 文本逐段写入 `.docx`。如果 Markdown 底稿里有管道符表格，例如：
+
+```text
+| 问题 | 类型 | 主管整改要求 |
+|---|---|---|
+```
+
+生成 Word 时必须转换为真实 Word 表格。生成后必须做结构检查：
+
+1. 如果 Markdown 底稿包含 N 个表格，DOCX 中必须至少有 N 个真实表格。
+2. DOCX 段落中不得残留 `|---|`、`| 问题 | 类型 |`、`| 维度 | 满分 |` 这类 Markdown 表格行。
+3. 检查失败时，不能把该 DOCX 作为 Word 正式版交付；必须重新转换或明确说明 Word 生成失败，只交付 Markdown 底稿。
+4. 当前环境没有更高质量转换器时，优先使用 `scripts/Convert-MarkdownMonthlyAuditToDocx.ps1`：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/Convert-MarkdownMonthlyAuditToDocx.ps1 `
+  -MarkdownPath "outputs/feishu_monthly_audit/抖音商城组_2026-06_销售月报AI初审报告.md" `
+  -OutputPath "outputs/feishu_monthly_audit/抖音商城组_2026-06_销售月报AI初审报告.docx" `
+  -StrictName
+```
 
 ## 不允许
 

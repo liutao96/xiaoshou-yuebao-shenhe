@@ -74,6 +74,8 @@ outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报复审结果.do
 
 如果无法识别部门或月份，用文档标题和当前日期代替。
 
+正式交付文件名必须优先从月报标题、正文标题或飞书文档标题中抽取中文部门/小组名。即使内部变量、临时文件或下载文件使用英文，也不能把英文 slug 作为正式交付名。发现输出名类似 `2026-06_douyin_mall_sales_monthly_audit_report.docx` 时，必须改为 `抖音商城组_2026-06_销售月报AI初审报告.docx` 这类中文业务名后再交付。
+
 ## Word 文档生成规则
 
 以下情况必须默认生成 Word：
@@ -89,6 +91,8 @@ outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报复审结果.do
 - 报告已经先形成 Markdown 底稿。
 
 Word 生成失败时，不中断审核结论，交付 Markdown 作为正式底稿，并说明未能生成 Word 的原因。
+
+如果 Markdown 底稿包含表格，Word 正式版必须包含真实 Word 表格，不得原样显示 Markdown 管道符表格。生成后至少检查一次：DOCX 真实表格数不低于 Markdown 表格数，且段落中不残留 `|---|`。检查不过时，Word 路径不能作为正式版发给部长。
 
 ## 不允许
 

@@ -37,20 +37,20 @@
 Markdown：
 
 ```text
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报AI初审报告.md
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报AI初审报告.md
 ```
 
 Word：
 
 ```text
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报AI初审报告.docx
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报AI初审报告.docx
 ```
 
 如果是复审：
 
 ```text
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报AI复审结果.md
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报AI复审结果.docx
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报AI复审结果.md
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报AI复审结果.docx
 ```
 
 ## 聊天区展示顺序
@@ -65,11 +65,13 @@ outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报AI复审结果.
 
 不能只展示 Markdown 路径，除非 Word 生成失败。
 
-A 类还必须展示单独老板一页纸路径：
+A 类和复审通过后的老板一页纸必须展示单独老板一页纸路径：
 
 ```text
 老板一页纸正式版：...
 ```
+
+复审通过后的老板一页纸内容不能只是“复审通过 + 评分 + 轻量修正”，也不能把复审整改过程原样搬给老板。必须按 `shuchu-muban.md` 的增强规则，带出关键经营数据、提交前风险提示、渠道/品项风险、费用效率抓手、下月验收动作、老板追问和期待回答标准；缺少的数据要明确标注，不得自行猜测。
 
 B/C/D 必须说明主报告重点区位置，例如：
 

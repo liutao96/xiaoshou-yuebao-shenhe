@@ -45,6 +45,8 @@ B 类默认不另拆文件，在主报告前部生成“补充小问题清单 / 
 
 聊天区输出复审结论、是否建议提交老板、最多 5 条剩余整改项。复审通过并需要留档时，生成老板一页纸 Word 正式版和 Markdown 底稿。
 
+复审通过后的老板一页纸必须按 `shuchu-muban.md` 的增强规则生成：不能只压缩复审结论，也不能把复审整改过程原样搬给老板。必须带核心经营数据、提交前风险提示、渠道/品项贡献与风险、费用效率抓手、下月验收动作、老板追问和期待回答标准。缺少的背景信息、责任人、目标值、预算压降金额、ROI 底线等必须明示“原报告未提供/复审报告未列明”，不得自行猜测。
+
 ## Markdown 与 Word 的选择
 
 | 场景 | 首选形态 | 说明 |
@@ -60,13 +62,14 @@ B 类默认不另拆文件，在主报告前部生成“补充小问题清单 / 
 生成本地报告时使用：
 
 ```text
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报AI初审报告.md
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报AI初审报告.docx
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_老板一页纸正式版.docx
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报深度经营诊断.md
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报深度经营诊断.docx
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报复审结果.md
-outputs/feishu_monthly_audit/YYYY-MM_部门或小组_销售月报复审结果.docx
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报AI初审报告.md
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报AI初审报告.docx
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_老板一页纸正式版.md
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_老板一页纸正式版.docx
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报深度经营诊断.md
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报深度经营诊断.docx
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报复审结果.md
+outputs/feishu_monthly_audit/部门或小组_YYYY-MM_销售月报复审结果.docx
 ```
 
 如果无法识别部门或月份，用文档标题和当前日期代替。

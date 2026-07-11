@@ -1,14 +1,14 @@
 ﻿{
     "name":  "xiaoshou-yuebao-shenhe",
     "version":  "1.4.9",
-    "released_at":  "2026-07-11T16:20:00+08:00",
+    "released_at":  "2026-07-11T15:56:31+08:00",
     "release_package":  "xiaoshou-yuebao-shenhe.zip",
     "package_path":  "xiaoshou-yuebao-shenhe.zip",
     "zip_url":  "https://github.com/liutao96/xiaoshou-yuebao-shenhe/raw/main/release/xiaoshou-yuebao-shenhe.zip",
     "manifest_url":  "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main",
     "github_repo":  "liutao96/xiaoshou-yuebao-shenhe",
     "github_branch":  "main",
-    "sha256":  "747c1d6451977b354ba9984c6ca0f4cbb8c00c84bae2a3005fe38906126d4266",
+    "sha256":  "3cfcde67e043d94918df767f0e3285c3024d8332e6dc19c1d28cd81c31509401",
     "updater":  "scripts/Update-XiaoshouYuebaoSkill.ps1",
     "release_notes":  [
                           "将云端版本检查提升为 Skill 调用后的第一步，优先于读取月报、读取规则、复审对照、评分和老板一页纸生成。",

@@ -1,7 +1,7 @@
 {
   "name": "xiaoshou-yuebao-shenhe",
   "version": "1.4.9",
-  "released_at": "2026-07-11T16:20:00+08:00",
+  "released_at": "2026-07-11T15:56:31+08:00",
   "release_package": "xiaoshou-yuebao-shenhe.zip",
   "update": {
     "manifest_url": "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main",

@@ -1,20 +1,20 @@
 ﻿{
     "name":  "xiaoshou-yuebao-shenhe",
-    "version":  "1.4.10",
-    "released_at":  "2026-07-11T16:26:06+08:00",
+    "version":  "1.4.11",
+    "released_at":  "2026-07-13T08:48:43+08:00",
     "release_package":  "xiaoshou-yuebao-shenhe.zip",
     "package_path":  "xiaoshou-yuebao-shenhe.zip",
     "zip_url":  "https://github.com/liutao96/xiaoshou-yuebao-shenhe/raw/main/release/xiaoshou-yuebao-shenhe.zip",
     "manifest_url":  "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main",
     "github_repo":  "liutao96/xiaoshou-yuebao-shenhe",
     "github_branch":  "main",
-    "sha256":  "73f6ca471b1d68ddee131faaa0eb627546c67800b3898197833105e90e7de8ef",
+    "sha256":  "48f97530463fadaed19c721c67694ae00fcbc2ff7a0dd06907ef701fcc7554df",
     "updater":  "scripts/Update-XiaoshouYuebaoSkill.ps1",
     "release_notes":  [
-                          "修复 Word 正式版交付规则：Markdown 表格必须转换为 Word 真实表格，不得把管道符表格原样写入 DOCX。",
-                          "新增 Markdown 转 Word 辅助脚本 Convert-MarkdownMonthlyAuditToDocx.ps1，并在生成后检查真实表格数量和 Markdown 表格残留。",
-                          "强化文件命名规则：正式报告必须使用“部门或小组_YYYY-MM_报告类型”的中文文件名，不允许使用 douyin_mall_sales_monthly_audit_report 这类英文 slug 作为正式交付名。",
-                          "输出路径展示时必须以 Word 正式版在前、Markdown 底稿在后，并明确部长重点看哪一节。",
-                          "保留 1.4.9 的入口云端更新检查硬门槛。"
+                          "吸收部长规则补丁：平台店铺月报中，模块一已完成订单 GSV 与费用率去退后销售额如果订单状态范围不同，不得直接互相复算。",
+                          "费用率分母已说明为去退后销售额且包含待发货、已发货、售后未完成订单时，不因其与已完成订单 GSV 存在差额扣分或封顶。",
+                          "费用率审核应沿用月报同口径分母，只要求说明统计范围和用途；只有同一费用分母内部前后冲突或无法判断时才按费用分母问题处理。",
+                          "在 14 模块审核中补充费用率分母边界，避免把正常订单状态差异误判为关键数据冲突。",
+                          "保留 1.4.10 的 Word 表格转换、中文文件命名和入口云端更新检查规则。"
                       ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "xiaoshou-yuebao-shenhe",
-  "version": "1.4.11",
-  "released_at": "2026-07-13T08:48:43+08:00",
+  "version": "1.5.0",
+  "released_at": "2026-08-08T16:54:15+08:00",
   "release_package": "xiaoshou-yuebao-shenhe.zip",
   "update": {
     "manifest_url": "https://api.github.com/repos/liutao96/xiaoshou-yuebao-shenhe/contents/release/latest-version.json?ref=main",
@@ -10,6 +10,9 @@
     "updater": "scripts/Update-XiaoshouYuebaoSkill.ps1"
   },
   "release_notes": [
+    "新增抖音商城子组适配：品牌直播组和全域代播组按各自账号口径审核，原抖音商城组完整月报规则保持不变。",
+    "品牌直播组不再因未提供店铺、SKU/品项、库存、费用或 ROI 被误判；全域代播组重点审核商品卡、代运营账号、费用预算和 ROI。",
+    "明确子组月报不与抖音商城组或另一子组强行加总；统计范围已说明时，GSV、直播间销售额、商品卡销售额和费用归属销售额不因不相等直接判冲突。",
     "吸收部长规则补丁：平台店铺月报中，模块一已完成订单 GSV 与费用率去退后销售额如果订单状态范围不同，不得直接互相复算。",
     "费用率分母已说明为去退后销售额且包含待发货、已发货、售后未完成订单时，不因其与已完成订单 GSV 存在差额扣分或封顶。",
     "费用率审核应沿用月报同口径分母，只要求说明统计范围和用途；只有同一费用分母内部前后冲突或无法判断时才按费用分母问题处理。",
